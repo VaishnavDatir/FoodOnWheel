@@ -1,0 +1,5 @@
+This application is developed by Vaishnav Datir.
+It is a food ordering application in which the data of restaurents is fatched form the server,
+then after seleting the restaurent we get menu of restaurents which is also fetched for server,
+placing order gives the server details and save this details. This app also allows up to save the favorite restaurents
+and also the order history.
