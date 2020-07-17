@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:backgroundTint="@color/colorText"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rlFaq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:id="@+id/llQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="1."
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:fontFamily="@font/rubik"/>
+
+            <TextView
+                android:id="@+id/txtQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="The question is to be or not to be? "
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llQuestion"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="ANS."
+                android:textColor="@color/colorBG"
+                android:textSize="14sp"
+                android:fontFamily="@font/rubik"/>
+
+            <TextView
+                android:id="@+id/txtAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="The answer is it always depends on you to be or not "
+                android:textColor="@color/colorET"
+                android:textSize="18sp"
+                android:fontFamily="@font/rubik"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

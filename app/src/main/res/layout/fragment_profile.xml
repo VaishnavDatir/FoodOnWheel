@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    tools:context=".fragment.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/userPhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:padding="3dp"
+        android:src="@drawable/user_photo"
+        android:tint="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userPhoto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/poppins_medium"
+        android:padding="2dp"
+        android:text="My Name"
+        android:textColor="@color/colorText"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/mobileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@color/colorET"
+        android:drawableStart="@drawable/ic_mobile"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorPrimary"
+        android:fontFamily="@font/rubik"
+        android:padding="5dp"
+        android:text="9988776655"
+        android:textColor="@color/colorText"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/emailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobileNo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorET"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorPrimary"
+        android:fontFamily="@font/poppins_medium"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:text="example@example.com"
+        android:textColor="@color/colorText"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailId"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/colorET"
+        android:drawableStart="@drawable/ic_address"
+        android:drawablePadding="10dp"
+        android:layout_centerHorizontal="true"
+        android:drawableTint="@color/colorPrimary"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Teen Takki, Kopar khairne, Navi Mumbai"
+        android:textColor="@color/colorText"
+        android:textSize="22sp" />
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuDrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    tools:context=".activity.RestaurantMenu">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/AppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/restMenuToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:title="Restaurant Name" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/restMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AppBarLayout"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:id="@+id/txtChoose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingHorizontal="4dp"
+            android:text="Choose from menu listed below:"
+            android:textColor="@color/colorHint"
+            android:textSize="19sp" />
+
+        <ImageView
+            android:id="@+id/restFav"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_fav_not"
+            android:tint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/restMenu">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/restMenu"
+            android:layout_marginTop="7dp"
+            android:background="@color/colorET"
+            android:padding="6dp"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:id="@+id/rlProceedToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/btnProceedToCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Proceed To Cart"
+                android:textColor="@color/colorText"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLoading_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorProgressBar">
+
+        <ImageView
+            android:id="@+id/imglogo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/food"
+            android:tint="@color/colorPrimary" />
+
+        <ProgressBar
+            android:id="@+id/pb_menu"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CartActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/CartAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:elevation="0dp">
+
+        <Toolbar
+            android:id="@+id/CartAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:title="My Cart" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/llrestInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CartAppBarLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="3dp"
+            android:text="Ordering Form:"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtCartRestName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="3dp"
+            android:text="Ordering Form: "
+            android:textColor="#000000"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/llrestInfo"
+        android:background="@color/colorPrimary" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/CartRecyclerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:layout_marginTop="5dp"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/btnPlaceOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Place Order"
+        android:textColor="@color/colorText"
+        android:textSize="22dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnPlaceOrder">
+
+        <TextView
+            android:id="@+id/txtTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingHorizontal="6dp"
+            android:text="TOTAL AMOUNT"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="4dp"
+            android:drawableStart="@drawable/currency_inr"
+            android:drawableTint="@color/colorPrimary"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingHorizontal="7dp"
+            android:text="99.99/-"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

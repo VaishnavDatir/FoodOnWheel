@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    tools:context=".activity.Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imglogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/food"
+            android:tint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/fon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imglogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/kalam"
+            android:text="@string/food_on_wheel"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/et_mn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fon"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorET"
+            android:drawableStart="@drawable/ic_mobile"
+            android:drawablePadding="6dp"
+            android:drawableTint="@color/colorPrimary"
+            android:fontFamily="@font/rubik"
+            android:hint="Enter Mobile Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorHint"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_mn"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorET"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="6dp"
+            android:drawableTint="@color/colorPrimary"
+            android:fontFamily="@font/rubik"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorHint"
+            android:textSize="22sp" />
+
+        <CheckBox
+            android:id="@+id/chk_Logged_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_password"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/rubik"
+            android:text="Keep me logged in."
+            android:textColor="@color/colorHint"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chk_Logged_in"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_fp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_login"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/rubik"
+            android:text="Forgot Password"
+            android:textColor="@color/colorHint"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/rubik"
+            android:paddingBottom="7dp"
+            android:text="Don't have account? Sign up now"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/LayoutprogressBar"
+        android:background="@color/colorProgressBar">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
