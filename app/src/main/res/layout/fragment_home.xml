@@ -11,7 +11,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:background="@color/colorPrimary"
-        android:padding="10dp">
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="4dp"
+        android:paddingVertical="5dp">
 
         <EditText
             android:id="@+id/et_Search"
@@ -36,9 +38,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/rlSearch"
-        android:layout_margin="2dp"
-        android:layout_marginTop="5dp"
-        android:padding="2dp" />
+        android:background="@drawable/recycler_design"
+        android:layout_marginTop="2dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="5dp"/>
 
     <RelativeLayout
         android:id="@+id/rlLoading_menu"
